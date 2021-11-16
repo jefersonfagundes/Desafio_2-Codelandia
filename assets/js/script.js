@@ -5,9 +5,6 @@
                 reset: false
             });
     
-            ScrollReveal().reveal('.header_info', { delay: 200 });
-            ScrollReveal().reveal('.date', { delay: 400 });
-            ScrollReveal().reveal('.title', { delay: 500 });
-            ScrollReveal().reveal('.description', { delay: 600 }
+            ScrollReveal().reveal('.header__info', { delay: 600 }
 );
 

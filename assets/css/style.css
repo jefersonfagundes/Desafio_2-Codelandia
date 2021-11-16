@@ -28,14 +28,14 @@
     src: url(../fontes/Montserrat-SemiBold.ttf);
 }
 
+/* a cada 1rem será considerado 10px */
 html {
     font-size: 62.5%;
-    max-width: 100vw;
 }
 
 body {
-    width: 100%;
-    font-size: 1.6rem;                 
+    max-width: 100vw;
+    font-size: 2rem;             
 }
 
 header {
@@ -44,7 +44,6 @@ header {
 
 .header > p {
     font-family: Montserrat-Medium;
-    font-size: 1.1rem;
     padding: 10px;
     background-color: var(--title);
     color: var(--bgCard);
@@ -58,8 +57,8 @@ header {
     padding: 10px;
 }
 
-.header_img {
-    background-image: url(../images/wallpaper.jpeg);
+.header__img {
+    background-image: url(../img/wallpaper.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -71,33 +70,35 @@ header {
     height: 350px;
 }
 
-.header_info {
-    height: 100%;
+.header__info {
+    height: 85%;
+    width: 66%;
+    margin: auto;
     display: flex;
     color: var(--white);
     flex-direction: column;
     justify-content: center;
+    font-family: Montserrat-SemiBold;
 }
 
-.header_info h1 {
-    font-family: Montserrat-SemiBold;
-    font-size: 2.8rem;
-    width: 30%;
+.header__info-title,
+.header__info-text {
+    width: 500px;
+}
+
+.header__info-title {
     font-size: normal;
-    margin-left: 125px;
     line-height: 60px;
 }
 
-.header_info p {
+.header__info-text {
     font-family: Montserrat-Medium;
-    width: 30%;
     line-height: 30px;
-    margin: 0 0 40px 125px;
 }
 
-main {
+.gallery {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -105,48 +106,51 @@ main {
     align-items: center;
 }
 
-.galeria {
-    flex-wrap: wrap;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+.gallery > div {
+    font-family: Montserrat-Bold;
+    color: var(--title);
+    text-align: center;
+    margin-top: 60px;
+    line-height: 40px;
+    width: 100%;
 }
 
-.galeria img {
-    width: 250px;
-    background-color: var(--bgCard);
-}
-
-.galeria img:hover {
-    transform: scale(1.1);
-    transition: 1s all ease;
+.gallery  .gallery__info {
+    font-family: Montserrat-SemiBold;
+    color: var(--text);
 }
 
 ol, li {
     list-style: none;
 }
 
-.main_info {
-    font-family: Montserrat-Bold;
-    color: var(--title);
-    text-align: center;
-    margin-top: 50px;
-    line-height: 40px;
-    width: 100%;
+.gallery__list {
+    flex-wrap: wrap;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: brown;
 }
 
-.main_info p {
-    font-family: Montserrat-SemiBold;
-    color: var(--text);
-}
-
-.galeria li {
+.gallery__list li {
     background-color: var(--bgCard);
     display: flex;
     align-items: center;
-    height: 200px;
-    margin: 10px 7px 10px 0;
+    justify-content: center;
+    height: 330px;
+    width: 410px;
+    margin: 6px 6px;
+}
+
+.gallery__list img {
+    width: 330px;
+    background-color: var(--bgCard);
+}
+
+.gallery__list img:hover {
+    transform: scale(1.1);
+    transition: 1s all ease;
 }
 
 footer {
@@ -154,13 +158,105 @@ footer {
     display: flex;
     margin-top: 40px;
     justify-content: center;
+    align-items: center;
     background-color: var(--title);
 }
 
-footer p {
+footer p,
+footer a {
     font-family: Montserrat-Medium;
-    font-size: 1.1rem;
     padding: 10px;
     color: var(--bgCard);
     text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width: 1440px) {
+     
+    body {
+        font-size: 1.2rem;
+    }
+
+    .header__info {
+        width: 72%;
+    }
+
+    .gallery__list {
+        width: 90%;
+    }
+
+    .header__info-title,
+    .header__info-text {
+        width: 300px;
+    }
+
+    .gallery__list li {
+        width: 250px;
+        height: 200px ;
+    }
+
+    .gallery__list img {
+        width: 200px;
+    }
+
+    .gallery > div,
+    .gallery__list {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1164px) {
+
+    .header__info {
+        width: 75%;
+    }
+
+    .gallery__list li {
+        width: 218px;
+        height: 180px ;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    .header__info-title,
+    .header__info-text {
+        width: 400px;
+    }
+
+    .header__info {
+        width: 70%;
+    }
+
+    .gallery__list li {
+        width: 300px;
+        height: 220px ;
+    }
+
+    .gallery__list img {
+        width: 250px;
+    }    
+}
+
+@media (max-width: 480px) {
+    
+    .header__info {
+        width: 100%;
+        padding: 5px;
+        align-items: center;
+    }
+
+    .header__info-title,
+    .header__info-text {
+        width: 300px;
+    }
+
+    .gallery > div,
+    .gallery__list {
+        margin-top: 15px;
+    }
+
+    .gallery__list {
+        width: 100%;
+    }
 }
