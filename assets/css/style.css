@@ -130,7 +130,6 @@ ol, li {
     display: flex;
     justify-content: center;
     margin-top: 60px;
-    background-color: brown;
 }
 
 .gallery__list li {
