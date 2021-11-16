@@ -1,6 +1,6 @@
 # :desktop_computer:Blog Codelândia
 
-<img src="assets/images/jordanShoesPreview.png"></img>
+<img src="assets/img/jordanShoesPreview.PNG"></img>
 <h4 align="center"><a href="https://blog-codelandia-one.vercel.app/" target="_blank">Acessar Demonstração</a></h4>
 
 ---
