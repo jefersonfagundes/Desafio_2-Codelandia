@@ -246,12 +246,12 @@ footer a {
     }
 
     .header__info-title {
-        font-size: 2.1rem
+        font-size: 2.0rem
      }
 
     .header__info-title,
     .header__info-text {
-        width: 270px;
+        width: 280px;
     }
 
     .gallery > div {
@@ -262,7 +262,7 @@ footer a {
     .gallery__list {
         margin-top: 15px;
     }
-    
+
     .gallery__list {
         width: 100%;
     }
