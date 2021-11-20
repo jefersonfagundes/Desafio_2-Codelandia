@@ -35,6 +35,7 @@ html {
 
 body {
     max-width: 100vw;
+    min-width: 280px;
     font-size: 2rem;             
 }
 
@@ -142,15 +143,125 @@ ol, li {
     margin: 6px 6px;
 }
 
-.gallery__list img {
-    width: 330px;
+.gallery__list-img {
+    width: 400px;
     background-color: var(--bgCard);
 }
 
-.gallery__list img:hover {
+.gallery__list-img:hover {
     transform: scale(1.1);
     transition: 1s all ease;
 }
+
+li > div {
+    display: flex;
+    align-items: center;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+
+  .modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modal .modal__card {
+    width: 260px;
+    height: 350px;
+    position: relative;
+    margin: 10% auto;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: var(--title);
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--white);
+  }
+
+  .modal__header {
+    flex-grow: 2;
+    display: flex;
+    color: var(--title);
+    align-items: flex-end;
+    justify-content: center;
+    padding: 5px;
+  }
+
+.modal__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 18px;
+    flex-grow: 1;
+}
+
+.modal__price-info {
+    color: var(--title);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal__price-info del {
+    opacity: 50%;
+}
+
+.modal__price-parcel {
+    color: var(--text);
+    font-size: 1rem;
+}
+
+.modal__img {
+    flex-grow: 1;
+    display: flex;
+    background-color: var(--bgCard);
+    justify-content: center;
+}
+
+  .modal__footer {
+      flex-grow: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .modal__footer button,
+  .modal__footer a {
+      width: 97%;
+      height: 35px;
+      border-radius: 15px;
+      border: none;
+      cursor: pointer;
+      background-color: var(--title);
+      color: var(--white);
+  }
 
 footer {
     grid-area: rodape;
@@ -267,3 +378,27 @@ footer a {
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
