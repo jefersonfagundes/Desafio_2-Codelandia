@@ -1,7 +1,7 @@
 # :desktop_computer:Jordan Shoes
 
 <img src="assets/img/jordanShoesPreview.PNG"></img>
-<h4 align="center"><a href="https://blog-codelandia-one.vercel.app/" target="_blank">Acessar Demonstração</a></h4>
+<h4 align="center"><a href="https://desafio-2-codelandia-gamma.vercel.app/" target="_blank">Acessar Demonstração</a></h4>
 
 ---
 
