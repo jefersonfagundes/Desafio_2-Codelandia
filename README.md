@@ -1,4 +1,4 @@
-# :desktop_computer:Blog Codelândia
+# :desktop_computer:Jordan Shoes
 
 <img src="assets/img/jordanShoesPreview.PNG"></img>
 <h4 align="center"><a href="https://blog-codelandia-one.vercel.app/" target="_blank">Acessar Demonstração</a></h4>
